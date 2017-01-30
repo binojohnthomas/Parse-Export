@@ -1,13 +1,5 @@
-import parse_export_data
+#wrapper class to get data of all app - looping through
 import os
-
-#variables= {asvTestBible wLlFWQ80bIy4W4VJafAHaZeusiUrCR87ODMOVVVz vU4fAv2FBneosBpCXGr1SAnQCUfUDHm9l99YZual TaTBfU0XYgnRgO3XNCAECi1kEVsKqEfKFGcXkPbx}
-
-#os.system('parse_export_data.py asvTestBible wLlFWQ80bIy4W4VJafAHaZeusiUrCR87ODMOVVVz vU4fAv2FBneosBpCXGr1SAnQCUfUDHm9l99YZual TaTBfU0XYgnRgO3XNCAECi1kEVsKqEfKFGcXkPbx')
-#python parse_export_data asvBible wLlFWQ80bIy4W4VJafAHaZeusiUrCR87ODMOVVVz vU4fAv2FBneosBpCXGr1SAnQCUfUDHm9l99YZual TaTBfU0XYgnRgO3XNCAECi1kEVsKqEfKFGcXkPbx
-#execfile( "parse_export_data", variables )
-
-
 f = open("ParseAppList.csv")
 applist = f.readlines()
 
@@ -17,7 +9,7 @@ for app in applist:
     #print(app)
     #print arg_list[]
 
-    python_exe = "python2 parse_export_data.py "+arg_list[0]+" "+arg_list[1]+" "+arg_list[2]+" "+arg_list[3]
+    python_exe = "python parse_export_data.py "+arg_list[0]+" "+arg_list[1]+" "+arg_list[2]+" "+arg_list[3]
     print python_exe
     os.system(python_exe)
 
