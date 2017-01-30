@@ -9,18 +9,13 @@ import time
 import urllib
 import datetime
 
-#if(len(sys.argv) < 5):
-#    print("Enter valid number of arguments: format :python <script_name> APPNAME APPLICATION_ID REST_API_KEY MASTER_KEY")
-#    exit()
 
-#APPLICATION_ID = "eMhyITg5QjAI4MWTzhinP9F6oftc7yfcr5xvLRf9"
 
 APP_NAME = sys.argv[1]
 APPLICATION_ID = sys.argv[2]
-#REST_API_KEY = "1Hp1vNCpokOUqZxHKA656jOdZ3WbifO8tu5GEDH8" #REST API Key
 REST_API_KEY = sys.argv[3]
 MASTER_KEY =  sys.argv[4]
-#MASTER_KEY = "glZL9bZXqYAGOBZfXTMETsqAswOcOEA6MKXypkQ8" #Master Key
+
 
 
 CLASSES = "Installation" #Enter comma seperated classnames here, ex "User,Role" etc! Don't add space after/before comma.
@@ -37,12 +32,7 @@ def getData(app_id, rest_api_key, api_endpoint, master_key=None, limit=1000, ord
                    'X-Parse-REST-API-Key': rest_api_key
                    }
 
-   # header_dict = {'X-Parse-Application-Id': app_id,
-    #               'X-Parse-REST-API-Key': rest_api_key
-     #              }
 
-    #if master_key is not None:
-    #    header_dict['X-Parse-Master-Key'] = master_key
 
     if master_key is not None:
         header_dict['X-Parse-Master-Key'] = master_key
