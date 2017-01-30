@@ -1,4 +1,4 @@
-Simple python script to export [Parse](http://parse.com/) data from all parse app(RETIRED). (Installation class)
+Simple python script [Parse](http://parse.com/) data for all parse.com hosted app(RETIRED). (Installation class)
 Script can be slightly modified to use other objects as well. The data is written locally as json format Ex: <app_name>.json
 
 
