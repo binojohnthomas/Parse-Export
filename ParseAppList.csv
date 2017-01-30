@@ -1,0 +1,2 @@
+list out all parse app details row by row in below format - note ',' is delimter parse argument
+<app_name>, <APPLICATION_ID>,<REST_API_KEY>,<MASTER_KEY>
